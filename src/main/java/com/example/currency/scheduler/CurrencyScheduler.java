@@ -28,6 +28,6 @@ public class CurrencyScheduler {
     @Scheduled(fixedRate = 1800000)
     @Transactional
     public void scheduledTask() {
-        //currencyService.batchUpdateExchangeRate(currencyService.getExchangeRateFromThirdParty(exchangeBeanProp.getBaseCurrency()));
+        currencyService.batchUpdateExchangeRate(currencyService.getExchangeRateFromThirdParty(exchangeBeanProp.getBaseCurrency()));
     }
 }
